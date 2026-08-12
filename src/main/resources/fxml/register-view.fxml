@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="edu.nyu.cs6103.movietickets.client.controller.RegisterController">
+ <VBox alignment="CENTER" maxWidth="430" spacing="15" styleClass="card">
+  <Label text="Create Account" styleClass="page-title"/>
+  <TextField fx:id="usernameField" promptText="Username" maxWidth="330"/>
+  <PasswordField fx:id="passwordField" promptText="Password (8+ characters)" maxWidth="330"/>
+  <PasswordField fx:id="confirmField" promptText="Confirm password" maxWidth="330" onAction="#createAccount"/>
+  <Label fx:id="statusLabel" styleClass="status-text" wrapText="true"/>
+  <Button text="Create Account" defaultButton="true" maxWidth="330" onAction="#createAccount"/>
+  <Hyperlink text="Back to sign in" onAction="#back"/>
+ </VBox><padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+</StackPane>

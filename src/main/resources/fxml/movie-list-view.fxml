@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="edu.nyu.cs6103.movietickets.client.controller.MovieListController">
+ <top><HBox alignment="CENTER_LEFT" spacing="12" styleClass="toolbar"><Label text="Now Showing" styleClass="page-title"/><Region HBox.hgrow="ALWAYS"/><Label fx:id="welcomeLabel"/><Button text="My Bookings" onAction="#history"/><Button text="Logout" styleClass="secondary-button" onAction="#logout"/></HBox></top>
+ <center><VBox spacing="12"><Label text="Choose a movie to see available showtimes." styleClass="muted-text"/><ListView fx:id="movieList" VBox.vgrow="ALWAYS"/><Label fx:id="statusLabel" styleClass="status-text"/><Button text="View Showtimes" onAction="#showTimes"/></VBox></center>
+ <padding><Insets top="24" right="32" bottom="28" left="32"/></padding>
+</BorderPane>

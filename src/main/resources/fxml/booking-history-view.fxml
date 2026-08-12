@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="edu.nyu.cs6103.movietickets.client.controller.BookingHistoryController">
+ <top><HBox alignment="CENTER_LEFT" spacing="14" styleClass="toolbar"><Button text="← Movies" styleClass="secondary-button" onAction="#back"/><Label text="My Bookings" styleClass="page-title"/><Region HBox.hgrow="ALWAYS"/><Button text="Refresh" styleClass="secondary-button" onAction="#refresh"/></HBox></top>
+ <center><VBox spacing="12"><ListView fx:id="bookingList" VBox.vgrow="ALWAYS"/><Label fx:id="statusLabel" styleClass="status-text"/><Button text="Cancel Selected Booking" onAction="#cancel"/></VBox></center>
+ <padding><Insets top="24" right="32" bottom="28" left="32"/></padding>
+</BorderPane>

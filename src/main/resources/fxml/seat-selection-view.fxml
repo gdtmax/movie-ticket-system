@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="edu.nyu.cs6103.movietickets.client.controller.SeatSelectionController">
+ <top><HBox alignment="CENTER_LEFT" spacing="14" styleClass="toolbar"><Button text="Back to Showtimes" styleClass="secondary-button" onAction="#back"/><Label fx:id="titleLabel" styleClass="page-title"/></HBox></top>
+ <center><VBox alignment="TOP_CENTER" spacing="22"><Label text="SCREEN" maxWidth="700" alignment="CENTER" styleClass="screen"/><ScrollPane fitToWidth="true" pannable="true" VBox.vgrow="ALWAYS"><content><FlowPane fx:id="seatPane" alignment="CENTER" hgap="10" vgap="10" prefWrapLength="680"><padding><Insets top="24" right="24" bottom="24" left="24"/></padding></FlowPane></content></ScrollPane></VBox></center>
+ <bottom><HBox alignment="CENTER_RIGHT" spacing="16" styleClass="toolbar"><Label fx:id="statusLabel" styleClass="status-text"/><Region HBox.hgrow="ALWAYS"/><Label fx:id="summaryLabel"/><Button text="Continue to Payment" onAction="#book"/></HBox></bottom>
+ <padding><Insets top="20" right="28" bottom="24" left="28"/></padding>
+</BorderPane>

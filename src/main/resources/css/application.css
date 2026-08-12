@@ -1,0 +1,46 @@
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f6fa;
+    -fx-text-fill: #172033;
+}
+
+.app-header {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #57068c;
+}
+
+.page-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 32px;
+    -fx-effect: dropshadow(gaussian, rgba(23,32,51,0.14), 18, 0.15, 0, 5);
+}
+
+.button {
+    -fx-background-color: #57068c;
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+    -fx-padding: 9px 18px;
+    -fx-cursor: hand;
+}
+
+.button:hover { -fx-background-color: #7020a0; }
+.text-field, .password-field { -fx-pref-height: 38px; }
+.muted-text { -fx-text-fill: #687386; }
+.status-text { -fx-text-fill: #b42318; }
+.toolbar { -fx-padding: 0 0 18px 0; }
+.secondary-button { -fx-background-color: #e8e3ee; -fx-text-fill: #3f2352; }
+.list-view { -fx-background-radius: 8px; -fx-padding: 4px; }
+.list-cell { -fx-padding: 14px; -fx-background-color: white; -fx-border-color: transparent transparent #e7e9ef transparent; }
+.list-cell:selected { -fx-background-color: #eee4f5; -fx-text-fill: #2c153a; }
+.screen { -fx-background-color: #d9dce5; -fx-padding: 8px; -fx-background-radius: 4px; }
+.seat-button { -fx-min-width: 58px; -fx-background-color: #2e8b57; }
+.seat-button:selected { -fx-background-color: #f4a62a; }
+.seat-booked { -fx-background-color: #9aa1ad; -fx-opacity: 0.65; }
