@@ -1,0 +1,26 @@
+# Maven build output
+target/
+maven-repository/
+.m2/
+
+# Runtime databases and local data
+data/*
+!data/.gitkeep
+*.db
+*.db-shm
+*.db-wal
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
