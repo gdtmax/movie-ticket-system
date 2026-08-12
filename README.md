@@ -1,3 +1,0 @@
-# movie-ticket-system
-
-
